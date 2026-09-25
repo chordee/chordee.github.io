@@ -16,19 +16,26 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="identity" href="#top">Chordee Lin</a>
-    <nav aria-label="Primary navigation">
-      <a href="#work">Work</a>
-      <a href="#expertise">Expertise</a>
-      <a href="#experience">Experience</a>
-      <a href="#about">About</a>
-    </nav>
+    <div class="header-right">
+      <nav aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+      </nav>
+      <div class="lang-switch" aria-label="Language switcher">
+        <span class="lang-current" aria-current="page">EN</span>
+        <span class="lang-divider">/</span>
+        <a class="lang-link" href="ja/">JA</a>
+      </div>
+    </div>
   </header>
 
   <main id="main">
     <section class="hero" id="top" aria-labelledby="hero-title">
       <p class="eyebrow">Senior FX Artist / Pipeline TD</p>
       <h1 id="hero-title">Building cinematic effects and the systems behind them.</h1>
-      <p class="hero-summary">I combine feature-film FX production with Houdini, USD/Solaris pipeline architecture, and production tool development in Python, C++, and VEX.</p>
+      <p class="hero-summary">I combine feature-film FX production in Houdini with USD/Solaris pipeline architecture and production tool development in Python, C++, and VEX.</p>
       <div class="hero-actions">
         <a class="button button-primary" href="#work">View Work</a>
         <a class="button external-link" href="https://github.com/chordee" target="_blank" rel="noreferrer">GitHub</a>
@@ -57,21 +64,21 @@
         <article class="project-card">
           <p class="project-index">03</p>
           <h3>ShotGrid MCP Server</h3>
-          <p class="project-summary">A Model Context Protocol server that gives agents structured access to Autodesk ShotGrid through its REST API.</p>
+          <p class="project-summary">A Model Context Protocol server that gives LLM agents structured access to Autodesk ShotGrid through its REST API.</p>
           <p class="project-tech">Python · MCP · ShotGrid · REST API</p>
           <a class="external-link" href="https://github.com/chordee/mcp-server-shotgrid" target="_blank" rel="noreferrer">View repository</a>
         </article>
         <article class="project-card">
           <p class="project-index">04</p>
           <h3>Kimodo Houdini Bridge</h3>
-          <p class="project-summary">A bridge connecting NVIDIA's Kimodo text-driven motion generation model to SideFX Houdini, generating 3D skeleton animations from natural language prompts.</p>
+          <p class="project-summary">A bridge connecting NVIDIA's Kimodo text-driven motion generation model to SideFX Houdini, generating 3D skeletal animation from natural-language prompts.</p>
           <p class="project-tech">NVIDIA Kimodo · Houdini · Python · Motion Generation</p>
           <a class="external-link" href="https://github.com/chordee/kimodo-houdini-bridge" target="_blank" rel="noreferrer">View repository</a>
         </article>
         <article class="project-card">
           <p class="project-index">05</p>
           <h3>Nuke Lens Distort CV</h3>
-          <p class="project-summary">A C++ Nuke NDK plug-in for lens distortion and undistortion using OpenCV's Brown-Conrady rational model and NeRFStudio JSON import.</p>
+          <p class="project-summary">A C++ Nuke NDK plug-in for lens distortion and undistortion, using the Brown-Conrady model with OpenCV's rational extension (k1–k6, p1, p2) and supporting Nerfstudio JSON import.</p>
           <p class="project-tech">C++ · Nuke NDK · OpenCV · Computer Vision</p>
           <a class="external-link" href="https://github.com/chordee/nuke-lens-distort-cv" target="_blank" rel="noreferrer">View repository</a>
         </article>
@@ -89,7 +96,7 @@
       <p class="section-label">Expertise</p>
       <h2 id="expertise-title">Production craft and pipeline engineering.</h2>
       <div class="expertise-grid">
-        <article><h3>Houdini FX</h3><p>Pyro, fluids, destruction, rigid-body simulation, PDG, grooming, and crowds.</p></article>
+        <article><h3>Houdini FX</h3><p>Pyro, fluid, destruction, and rigid-body simulation; PDG; grooming; and crowds.</p></article>
         <article><h3>USD / Solaris Pipeline</h3><p>Pipeline architecture, asset integration, and studio workflow migration.</p></article>
         <article><h3>Python / C++ / VEX</h3><p>Artist-facing tools, DCC integrations, automation, and performance-focused solutions.</p></article>
         <article><h3>Production Automation</h3><p>Systems that reduce repetitive work and let artists concentrate on creative decisions.</p></article>
@@ -100,17 +107,17 @@
       <p class="section-label">Experience</p>
       <h2 id="experience-title">From shot production to studio-wide systems.</h2>
       <ol class="timeline">
-        <li><p class="timeline-date">2026 — Present</p><h3>Senior FX Artist / Pipeline TD · Reno Studios</h3><p>Leading advanced FX development while designing production automation and asset-integration workflows.</p></li>
-        <li><p class="timeline-date">2015 — 2026</p><h3>FX Artist → FX Lead → FX Supervisor · MoonShine Animation</h3><p>Led the transition from Maya-centered production to Houdini and Solaris, built the USD pipeline, and supported FX tools and studio workflows.</p></li>
-        <li><p class="timeline-date">2014 — 2015</p><h3>FX Artist · Taipei Postproduction</h3><p>Worked in feature-film post-production with ACES color management and stereoscopic Nuke workflows.</p></li>
-        <li><p class="timeline-date">2011 — 2014</p><h3>FX Artist / Animator / Compositor · DancingInk</h3><p>Created procedural Houdini effects alongside rendering, compositing, tracking, animation, and rigging work.</p></li>
+        <li><p class="timeline-date">2026–Present</p><h3>Senior FX Artist / Pipeline TD · Reno Studios</h3><p>Leading advanced FX development while designing production automation and asset-integration workflows.</p></li>
+        <li><p class="timeline-date">2015–2026</p><h3>FX Artist → FX Lead → FX Supervisor · MoonShine Animation</h3><p>Led the transition from Maya-centered production to Houdini and Solaris, built the USD pipeline from scratch, and developed FX tools while supporting studio-wide workflows.</p></li>
+        <li><p class="timeline-date">2014–2015</p><h3>FX Artist · Taipei Postproduction</h3><p>Worked on feature-film post-production, handling ACES color management and stereoscopic Nuke workflows.</p></li>
+        <li><p class="timeline-date">2011–2014</p><h3>FX Artist / Animator / Compositor · DancingInk</h3><p>Created procedural Houdini effects alongside rendering, compositing, tracking, animation, and rigging work.</p></li>
       </ol>
     </section>
 
     <section id="about" aria-labelledby="about-title">
       <p class="section-label">About</p>
       <h2 id="about-title">I work where creative production meets infrastructure.</h2>
-      <p>My career has moved from hands-on FX production to team leadership and pipeline architecture. That progression shapes how I build tools: around real shot work, artist needs, and the constraints of production.</p>
+      <p>My career has moved from hands-on FX production to team leadership and pipeline architecture. That progression shapes how I build tools — around real shot work, artist needs, and production constraints.</p>
     </section>
   </main>
 

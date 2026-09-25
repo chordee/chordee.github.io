@@ -28,6 +28,12 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 .skip-link:focus { top: 1rem; }
 .site-header, main, footer { width: min(calc(100% - 2rem), var(--max-width)); margin-inline: auto; }
 .site-header { display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; padding-block: 1.4rem; }
+.header-right { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+.lang-switch { display: inline-flex; align-items: center; gap: .4rem; font-size: .85rem; font-weight: 700; }
+.lang-current { color: var(--accent); }
+.lang-link { color: var(--muted); text-decoration: none; }
+.lang-link:hover { color: var(--text); }
+.lang-divider { opacity: .3; color: var(--muted); }
 .identity { font-weight: 750; text-decoration: none; }
 nav { display: flex; flex-wrap: wrap; gap: .7rem 1.25rem; }
 nav a { color: var(--muted); font-size: .9rem; text-decoration: none; }
@@ -64,6 +70,7 @@ footer div { display: flex; gap: 1rem; }
 
 @media (max-width: 720px) {
   .site-header, footer { align-items: flex-start; flex-direction: column; }
+  .header-right { width: 100%; justify-content: space-between; }
   .hero { min-height: auto; padding-top: 5rem; }
   .project-grid, .expertise-grid { grid-template-columns: 1fr; }
   .timeline li { grid-template-columns: 1fr; }
