@@ -27,3 +27,11 @@ if ("IntersectionObserver" in window && sectionLinks.length > 0) {
     if (section) observer.observe(section);
   }
 }
+
+for (const el of document.querySelectorAll("[data-user][data-domain]")) {
+  const user = el.getAttribute("data-user");
+  const domain = el.getAttribute("data-domain");
+  const address = `${user}@${domain}`;
+  el.setAttribute("href", `mailto:${address}`);
+  el.setAttribute("title", address);
+}
